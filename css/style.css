@@ -1,0 +1,113 @@
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: extend;
+  min-height: 100vh;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: #0779e4 3px solid;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.job,
+.degree {
+  margin-bottom: 1.5rem;
+}
+
+.job h3,
+.degree h3 {
+  margin-bottom: 0.3rem;
+  color: #0779e4;
+}
+
+.job p,
+.degree p {
+  margin-bottom: 0.5rem;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills li {
+  background: #0779e4;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#certifications ul {
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+#see-more-btn {
+  background: #0779e4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
