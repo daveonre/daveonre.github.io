@@ -1,119 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dawit Admasu - Site Reliability Engineer</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h1>Dawit Admasu</h1>
-            <h2>Site Reliability Engineer (SRE)</h2>
-            <p>Gdańsk, Poland</p>
-            <p>Email: <a href="mailto:dawagech@gmail.com">dawagech@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/dawit-admasu-265a12229" target="_blank">linkedin.com/in/dawit-admasu-265a12229</a></p>
-            <p>Phone: +48517324538</p>
+      <div class="container">
+        <img
+          src="images/profile.jpg"
+          alt="Dawit Admasu"
+          class="profile-photo"
+        />
+        <div class="header-info">
+          <h1>Dawit Admasu</h1>
+          <h2>Site Reliability Engineer (SRE)</h2>
+          <p>Gdańsk, Poland</p>
+          <p>
+            Email: <a href="mailto:dawagech@gmail.com">dawagech@gmail.com</a>
+          </p>
+          <p>
+            LinkedIn:
+            <a
+              href="https://linkedin.com/in/dawit-admasu-265a12229"
+              target="_blank"
+              >linkedin.com/in/dawit-admasu-265a12229</a
+            >
+          </p>
+          <p>Phone: +48517324538</p>
         </div>
+      </div>
     </header>
 
     <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Results-oriented Site Reliability Engineer (SRE) currently based in Gdańsk, Poland. Motivated by improving system performance, ensuring high availability, and optimizing resource utilization through infrastructure monitoring and automation.</p>
+      <div class="container">
+        <div class="resume-panel">
+          <h2 class="section-title">ABOUT ME</h2>
+          <p>
+            Highly motivated Site Reliability Engineer focused on cloud-native
+            architecture, container orchestration, and automated observability.
+            Proven in improving availability, system performance, and resource
+            efficiency by automating monitoring and securing communication
+            across distributed microservices.
+          </p>
         </div>
+      </div>
     </section>
 
     <section id="experience">
-        <div class="container">
-            <h2>Professional Experience</h2>
-            <div class="job">
-                <h3>Site Reliability Engineer</h3>
-                <p><strong>Thomson Reuters</strong> | Aug 2023 - Present</p>
-                <ul>
-                    <li>Infrastructure monitoring, automation, and incident management.</li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="work-experience-panel">
+          <h2 class="section-title">WORK EXPERIENCE</h2>
 
-            <button onclick="toggleExperience()" id="see-more-btn">See More</button>
+          <div class="experience-role">
+            <h3>SITE RELIABILITY ENGINEER (CURRENT)</h3>
+            <p class="experience-company">THOMSON REUTERS, GDANSK</p>
+            <p class="experience-location">POLAND</p>
+            <ul>
+              <li>Infrastructure Monitoring (PROD)</li>
+              <li>Automation &amp; CI/CD</li>
+              <li>Incident Management (PROD, HP, QED)</li>
+            </ul>
+          </div>
 
-            <div id="more-experience" style="display: none;">
-                <div class="job">
-                    <h3>Customer Service Specialist</h3>
-                    <p><strong>Foundever</strong> | Dec 2022 - 2023</p>
-                    <ul>
-                        <li>Provided technical assistance and managed customer inquiries.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Virtual Product Compliance Associate</h3>
-                    <p><strong>Amazon</strong> | 2022</p>
-                    <ul>
-                        <li>Handled product classification, seller authentication, and document reviews.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Junior Database Designer</h3>
-                    <p><strong>Ethiopian Broadcasting Authority</strong> | 2019</p>
-                    <ul>
-                        <li>Designed databases using Microsoft SQL Server and SQL Management Studio.</li>
-                    </ul>
-                </div>
-            </div>
+          <div class="experience-role">
+            <h3>JUNIOR DATABASE DESIGNER</h3>
+            <p class="experience-company">ETHIOPIAN BROADCASTING AUTHORITY,</p>
+            <p class="experience-location">ETHIOPIA 2019</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="degree">
-                <h3>Master’s degree in Cloud Computing</h3>
-                <p><strong>Warsaw School of Computer Science</strong> | Feb 2022 - 2024</p>
-            </div>
-            <div class="degree">
-                <h3>Bachelor of Science in Electrical and Computer Engineering</h3>
-                <p><strong>Mekelle University</strong> | Graduated 2020 (CGPA: 3.59/4)</p>
-            </div>
+      <div class="container">
+        <div class="resume-panel">
+          <h2 class="section-title">EDUCATION</h2>
+          <div class="degree">
+            <h3>Master’s degree in Cloud Computing</h3>
+            <p>
+              <strong>Warsaw School of Computer Science</strong> | Feb 2022 -
+              2024
+            </p>
+          </div>
+          <div class="degree">
+            <h3>Bachelor of Science in Electrical and Computer Engineering</h3>
+            <p>
+              <strong>Mekelle University</strong> | Graduated 2020 (CGPA:
+              3.59/4)
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="skills">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>ServiceNow</li>
-                <li>Datadog</li>
-                <li>Jenkins</li>
-                <li>PowerShell</li>
-                <li>Bash scripting</li>
-                <li>Unix</li>
-                <li>Networking</li>
-                <li>Windows and Linux OS administration</li>
-                <li>ITIL practices</li>
-            </ul>
+      <div class="container">
+        <div class="technical-skills-panel">
+          <h2 class="section-title">TECHNICAL SKILLS</h2>
+          <ul>
+            <li>
+              <strong>Containerization &amp; Orchestration:</strong> Docker,
+              Kubernetes (K8s).
+            </li>
+            <li>
+              <strong>CI/CD &amp; Version Control:</strong> GitHub, Bitbucket.
+            </li>
+            <li>
+              <strong>Monitoring &amp; Observability:</strong> Datadog,
+              Prometheus, Grafana
+            </li>
+            <li>
+              <strong>Messaging &amp; Databases:</strong> SQL (Microsoft SQL
+              Server).
+            </li>
+            <li>
+              <strong>Security &amp; Networking:</strong> JWT (Auth), HTTPS
+            </li>
+            <li>
+              <strong>Scripting &amp; OS:</strong> Bash scripting, PowerShell,
+              Unix, Linux (Admin), Windows (Admin).
+            </li>
+            <li>
+              <strong>IT Service Management:</strong> ServiceNow, ITIL
+              Framework.
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
 
     <section id="certifications">
-        <div class="container">
-            <h2>Certifications</h2>
-            <ul>
-                <li>AWS Academy Graduate in Cloud Architecting</li>
-                <li>ITIL Foundation Certificate in IT Service Management</li>
-                <li>Youth Entrepreneurship training (March 2020)</li>
-                <li>Employability Skills and Career Development (January 2020)</li>
-            </ul>
+      <div class="container">
+        <div class="resume-panel">
+          <h2 class="section-title">CERTIFICATIONS</h2>
+          <ul class="section-list">
+            <li>AWS Academy Graduate in Cloud Architecting</li>
+            <li>ITIL Foundation Certificate in IT Service Management</li>
+            <li>Youth Entrepreneurship training (March 2020)</li>
+            <li>Employability Skills and Career Development (January 2020)</li>
+          </ul>
         </div>
+      </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Dawit Admasu</p>
-            <p>Data processing consent clause for recruitment purposes in accordance with European Union regulations.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2026 Dawit Admasu</p>
+        <p>
+          Data processing consent clause for recruitment purposes in accordance
+          with European Union regulations.
+        </p>
+      </div>
     </footer>
 
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
