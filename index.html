@@ -15,10 +15,10 @@
           extend: {
             colors: {
               brand: {
-                50: "#f0f9ff",
-                500: "#0284c7",
-                600: "#0284c7",
-                900: "#0c4a6e",
+                50: "#ffffff",
+                500: "#d4d4d4",
+                600: "#a3a3a3",
+                900: "#171717",
               },
             },
           },
@@ -26,92 +26,122 @@
       };
     </script>
   </head>
-  <body class="bg-slate-900 text-slate-100 font-sans antialiased">
+  <body
+    class="bg-black text-neutral-200 font-sans antialiased selection:bg-neutral-800 selection:text-white"
+  >
     <!-- Navigation -->
     <nav
-      class="fixed top-0 w-full bg-slate-900/90 backdrop-blur border-b border-slate-800 z-50"
+      class="fixed top-0 w-full bg-black/90 backdrop-blur border-b border-neutral-800 z-50"
     >
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
-          <span class="text-xl font-bold tracking-wider text-sky-400"
+          <span
+            class="text-xl font-bold tracking-wider text-white border-l-2 border-white pl-3"
             >DAWIT ADMASU</span
           >
           <div
-            class="hidden md:flex space-x-8 text-sm font-medium text-slate-300"
+            class="hidden md:flex space-x-8 text-sm font-medium text-neutral-400"
           >
-            <a href="#about" class="hover:text-sky-400 transition">About</a>
-            <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
-            <a href="#experience" class="hover:text-sky-400 transition"
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#skills" class="hover:text-white transition">Skills</a>
+            <a href="#experience" class="hover:text-white transition"
               >Experience</a
             >
-            <a href="#projects" class="hover:text-sky-400 transition"
-              >Projects</a
-            >
-            <a href="#education" class="hover:text-sky-400 transition"
+            <a href="#projects" class="hover:text-white transition">Projects</a>
+            <a href="#education" class="hover:text-white transition"
               >Education</a
             >
-            <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
+    <!-- Hero Section with Laughing Profile Photo -->
     <section
       id="about"
       class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto"
     >
-      <div class="space-y-6">
-        <div
-          class="inline-block px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-full text-sky-400 text-sm font-semibold"
-        >
-          Site Reliability Engineer | Cloud & Platform Operations
-        </div>
-        <h1
-          class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight"
-        >
-          Dawit Admasu
-        </h1>
-        <p class="text-slate-400 text-lg max-w-3xl leading-relaxed">
-          Site Reliability Engineer focused on supporting enterprise-scale cloud
-          platforms, production environments, and customer-facing technical
-          operations. Strong focus on high-availability AWS architectures,
-          infrastructure-as-code automation, containerized deployments, and
-          AI-driven orchestration.
-        </p>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Column: Bio & Links -->
+        <div class="lg:col-span-8 space-y-6">
+          <div
+            class="inline-block px-3 py-1 bg-yellow-400/10 border border-yellow-400/30 rounded-full text-yellow-400 text-sm font-semibold"
+          >
+            Site Reliability Engineer | Cloud & Platform Operations
+          </div>
 
-        <div class="flex flex-wrap gap-4 pt-4 text-slate-300">
-          <span class="flex items-center gap-2"
-            ><i class="fas fa-location-dot text-sky-400"></i> Gdańsk,
-            Poland</span
+          <h1
+            class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight"
           >
-          <a
-            href="mailto:dawagech@gmail.com"
-            class="flex items-center gap-2 hover:text-sky-400"
-            ><i class="fas fa-envelope text-sky-400"></i> dawagech@gmail.com</a
-          >
-          <span class="flex items-center gap-2"
-            ><i class="fas fa-phone text-sky-400"></i> +48 517 324 538</span
-          >
+            Dawit Admasu
+          </h1>
+
+          <p class="text-neutral-300 text-lg max-w-2xl leading-relaxed">
+            Site Reliability Engineer focused on supporting enterprise-scale
+            cloud platforms, production environments, and customer-facing
+            technical operations. Strong focus on high-availability AWS
+            architectures, infrastructure-as-code automation, containerized
+            deployments, and AI-driven orchestration.
+          </p>
+
+          <div class="flex flex-wrap gap-6 pt-2 text-neutral-300">
+            <span class="flex items-center gap-2 text-sm"
+              ><i class="fas fa-location-dot text-yellow-400"></i> Gdańsk,
+              Poland</span
+            >
+            <a
+              href="mailto:dawagech@gmail.com"
+              class="flex items-center gap-2 text-sm hover:text-yellow-400 transition"
+              ><i class="fas fa-envelope text-yellow-400"></i>
+              dawagech@gmail.com</a
+            >
+            <span class="flex items-center gap-2 text-sm"
+              ><i class="fas fa-phone text-yellow-400"></i> +48 517 324
+              538</span
+            >
+          </div>
+
+          <div class="flex gap-4 pt-4">
+            <a
+              href="https://www.linkedin.com/in/dawit-a-265a12229"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-5 py-2.5 bg-yellow-400 hover:bg-yellow-300 text-black font-bold rounded-lg transition flex items-center gap-2 shadow-lg shadow-yellow-400/10"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a
+              href="https://github.com/daveonre"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-5 py-2.5 bg-neutral-900 hover:bg-neutral-800 text-white font-medium rounded-lg border border-neutral-700 hover:border-yellow-400/50 transition flex items-center gap-2"
+            >
+              <i class="fab fa-github"></i> GitHub Portfolio
+            </a>
+          </div>
         </div>
 
-        <div class="flex gap-4 pt-4">
-          <a
-            href="https://www.linkedin.com/in/dawit-a-265a12229"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="px-5 py-2.5 bg-sky-600 hover:bg-sky-500 text-white font-medium rounded-lg transition flex items-center gap-2"
-          >
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a
-            href="https://daveonre.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium rounded-lg border border-slate-700 transition flex items-center gap-2"
-          >
-            <i class="fab fa-github"></i> GitHub Portfolio
-          </a>
+        <!-- Right Column: Profile Picture with Yellow Border Accent -->
+        <div class="lg:col-span-4 flex justify-center lg:justify-end">
+          <div class="relative group">
+            <!-- Subtle Yellow Background Glow Accent -->
+            <div
+              class="absolute -inset-1 bg-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-300"
+            ></div>
+
+            <!-- Image Frame -->
+            <div
+              class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-2xl overflow-hidden border-2 border-yellow-400/40 bg-neutral-900 shadow-2xl"
+            >
+              <img
+                src="./assets/profile.jpg"
+                alt="Dawit Admasu smiling"
+                class="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition duration-500 ease-in-out"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -119,63 +149,71 @@
     <!-- Skills Section -->
     <section
       id="skills"
-      class="py-16 bg-slate-800/50 border-y border-slate-800"
+      class="py-16 bg-neutral-950 border-y border-neutral-800"
     >
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-          <i class="fas fa-code text-sky-400"></i> Technical Expertise
+          <i class="fas fa-code text-neutral-400"></i> Technical Expertise
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
-            <h3 class="text-sky-400 font-semibold mb-3">
-              Cloud Infrastructure
-            </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
+          <div
+            class="p-6 bg-black border border-neutral-800 rounded-xl hover:border-neutral-700 transition"
+          >
+            <h3 class="text-white font-semibold mb-3">Cloud Infrastructure</h3>
+            <p class="text-neutral-400 text-sm leading-relaxed">
               AWS (EKS, ECS, EC2, S3, VPC, IAM, Route 53, Lambda, CloudWatch),
               Azure (Virtual Networks, Routing, Azure DevOps), Terraform (IaC).
             </p>
           </div>
 
-          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
-            <h3 class="text-sky-400 font-semibold mb-3">
+          <div
+            class="p-6 bg-black border border-neutral-800 rounded-xl hover:border-neutral-700 transition"
+          >
+            <h3 class="text-white font-semibold mb-3">
               Containers & Orchestration
             </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
+            <p class="text-neutral-400 text-sm leading-relaxed">
               Kubernetes (K8s), Docker, Volume & Storage Persistence Management.
             </p>
           </div>
 
-          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
-            <h3 class="text-sky-400 font-semibold mb-3">CI/CD & Automation</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
+          <div
+            class="p-6 bg-black border border-neutral-800 rounded-xl hover:border-neutral-700 transition"
+          >
+            <h3 class="text-white font-semibold mb-3">CI/CD & Automation</h3>
+            <p class="text-neutral-400 text-sm leading-relaxed">
               GitHub Actions, Git, Shell (Bash/PowerShell) & Python automation
               scripting.
             </p>
           </div>
 
-          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
-            <h3 class="text-sky-400 font-semibold mb-3">
+          <div
+            class="p-6 bg-black border border-neutral-800 rounded-xl hover:border-neutral-700 transition"
+          >
+            <h3 class="text-white font-semibold mb-3">
               Observability & SRE Metrics
             </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
+            <p class="text-neutral-400 text-sm leading-relaxed">
               Prometheus, Grafana, Datadog, AWS CloudWatch, SLI/SLO tracking,
               incident management, LLM/RAG application tracing.
             </p>
           </div>
 
-          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
-            <h3 class="text-sky-400 font-semibold mb-3">Data & Databases</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
+          <div
+            class="p-6 bg-black border border-neutral-800 rounded-xl hover:border-neutral-700 transition"
+          >
+            <h3 class="text-white font-semibold mb-3">Data & Databases</h3>
+            <p class="text-neutral-400 text-sm leading-relaxed">
               PostgreSQL (including pgvector), SQL Server, Vector databases,
               Immutable configurations.
             </p>
           </div>
 
-          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
-            <h3 class="text-sky-400 font-semibold mb-3">
-              Full-Stack & Systems
-            </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
+          <div
+            class="p-6 bg-black border border-neutral-800 rounded-xl hover:border-neutral-700 transition"
+          >
+            <h3 class="text-white font-semibold mb-3">Full-Stack & Systems</h3>
+            <p class="text-neutral-400 text-sm leading-relaxed">
               Stack FARM (FastAPI, React, MongoDB), Unix/Linux Administration,
               Windows Server Administration.
             </p>
@@ -190,14 +228,15 @@
       class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
     >
       <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-        <i class="fas fa-briefcase text-sky-400"></i> Professional Experience
+        <i class="fas fa-briefcase text-neutral-400"></i> Professional
+        Experience
       </h2>
 
       <div class="space-y-8">
         <!-- Thomson Reuters -->
-        <div class="relative pl-6 border-l-2 border-sky-500/30">
+        <div class="relative pl-6 border-l-2 border-white">
           <div
-            class="absolute -left-[9px] top-0 w-4 h-4 bg-sky-500 rounded-full border-4 border-slate-900"
+            class="absolute -left-[9px] top-0 w-4 h-4 bg-white rounded-full border-4 border-black"
           ></div>
           <div
             class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2"
@@ -205,13 +244,13 @@
             <h3 class="text-xl font-semibold text-white">
               Site Reliability Engineer
             </h3>
-            <span class="text-sky-400 text-sm"
+            <span class="text-neutral-400 text-sm font-mono"
               >Thomson Reuters | 2024 – Present</span
             >
           </div>
-          <p class="text-slate-400 text-sm mb-4">Gdańsk, Poland</p>
+          <p class="text-neutral-500 text-sm mb-4">Gdańsk, Poland</p>
           <ul
-            class="list-disc list-inside text-slate-300 text-sm space-y-2 leading-relaxed"
+            class="list-disc list-inside text-neutral-300 text-sm space-y-2 leading-relaxed"
           >
             <li>
               Monitor and maintain secure cloud-native infrastructure using AWS
@@ -236,9 +275,9 @@
         </div>
 
         <!-- Foundever -->
-        <div class="relative pl-6 border-l-2 border-slate-700">
+        <div class="relative pl-6 border-l-2 border-neutral-800">
           <div
-            class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-900"
+            class="absolute -left-[9px] top-0 w-4 h-4 bg-neutral-700 rounded-full border-4 border-black"
           ></div>
           <div
             class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2"
@@ -246,11 +285,13 @@
             <h3 class="text-xl font-semibold text-white">
               Customer Support Associate
             </h3>
-            <span class="text-slate-400 text-sm">Foundever | 2022 – 2024</span>
+            <span class="text-neutral-400 text-sm font-mono"
+              >Foundever | 2022 – 2024</span
+            >
           </div>
-          <p class="text-slate-400 text-sm mb-4">Gdańsk, Poland</p>
+          <p class="text-neutral-500 text-sm mb-4">Gdańsk, Poland</p>
           <ul
-            class="list-disc list-inside text-slate-300 text-sm space-y-2 leading-relaxed"
+            class="list-disc list-inside text-neutral-300 text-sm space-y-2 leading-relaxed"
           >
             <li>
               Delivered technical customer support and managed escalations
@@ -264,9 +305,9 @@
         </div>
 
         <!-- EBC -->
-        <div class="relative pl-6 border-l-2 border-slate-700">
+        <div class="relative pl-6 border-l-2 border-neutral-800">
           <div
-            class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-900"
+            class="absolute -left-[9px] top-0 w-4 h-4 bg-neutral-700 rounded-full border-4 border-black"
           ></div>
           <div
             class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2"
@@ -274,11 +315,13 @@
             <h3 class="text-xl font-semibold text-white">
               Junior Database Administrator
             </h3>
-            <span class="text-slate-400 text-sm">EBC | 2020 – 2021</span>
+            <span class="text-neutral-400 text-sm font-mono"
+              >EBC | 2020 – 2021</span
+            >
           </div>
-          <p class="text-slate-400 text-sm mb-4">Addis Ababa, Ethiopia</p>
+          <p class="text-neutral-500 text-sm mb-4">Addis Ababa, Ethiopia</p>
           <ul
-            class="list-disc list-inside text-slate-300 text-sm space-y-2 leading-relaxed"
+            class="list-disc list-inside text-neutral-300 text-sm space-y-2 leading-relaxed"
           >
             <li>
               Managed daily administration and health checks of Microsoft SQL
@@ -296,30 +339,62 @@
     <!-- Technical Projects -->
     <section
       id="projects"
-      class="py-16 bg-slate-800/50 border-y border-slate-800"
+      class="py-16 bg-neutral-950 border-y border-neutral-800"
     >
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-          <i class="fas fa-diagram-project text-sky-400"></i> Featured Technical
-          Projects
+          <i class="fas fa-diagram-project text-neutral-400"></i> Featured
+          Technical Projects
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- RAG Chatbot -->
           <div
-            class="p-6 bg-slate-900 border border-slate-800 rounded-xl flex flex-col justify-between"
+            class="p-6 bg-black border border-neutral-800 rounded-xl flex flex-col justify-between hover:border-neutral-700 transition"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-white">RAG Chatbot</h3>
+                <a
+                  href="https://github.com/daveonre/rag-chatbot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-neutral-400 hover:text-white transition"
+                  title="View Code on GitHub"
+                >
+                  <i class="fab fa-github text-lg"></i>
+                </a>
+              </div>
+              <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+                Full-stack Retrieval-Augmented Generation (RAG) platform
+                enabling custom PDF document ingestion, vector search, and
+                context-aware QA using modern LLMs.
+              </p>
+            </div>
+            <div
+              class="flex flex-wrap gap-2 pt-2 border-t border-neutral-800 text-xs font-mono text-neutral-300"
+            >
+              <span>FastAPI</span> • <span>React</span> • <span>Docker</span> •
+              <span>Vector Search</span> • <span>LLMs</span>
+            </div>
+          </div>
+
+          <!-- Autonomous RAG Repo Analyst Agent -->
+          <div
+            class="p-6 bg-black border border-neutral-800 rounded-xl flex flex-col justify-between hover:border-neutral-700 transition"
           >
             <div>
               <h3 class="text-lg font-bold text-white mb-2">
                 Autonomous RAG Repo Analyst Agent
               </h3>
-              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              <p class="text-neutral-400 text-sm leading-relaxed mb-4">
                 Architected an agentic RAG pipeline to ingest, index, and query
                 complex codebases autonomously, deploying backend services to
                 AWS EC2.
               </p>
             </div>
             <div
-              class="flex flex-wrap gap-2 pt-2 border-t border-slate-800 text-xs font-mono text-sky-400"
+              class="flex flex-wrap gap-2 pt-2 border-t border-neutral-800 text-xs font-mono text-neutral-300"
             >
               <span>Python</span> • <span>OpenAI</span> •
               <span>Vector DBs</span> • <span>GitHub API</span> •
@@ -327,20 +402,21 @@
             </div>
           </div>
 
+          <!-- AI ServiceNow Incident Chatbot -->
           <div
-            class="p-6 bg-slate-900 border border-slate-800 rounded-xl flex flex-col justify-between"
+            class="p-6 bg-black border border-neutral-800 rounded-xl flex flex-col justify-between hover:border-neutral-700 transition"
           >
             <div>
               <h3 class="text-lg font-bold text-white mb-2">
                 AI ServiceNow Incident Chatbot
               </h3>
-              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              <p class="text-neutral-400 text-sm leading-relaxed mb-4">
                 Integrated a secure, context-aware AI chatbot within ServiceNow
                 to diagnose active tickets and lower MTTR.
               </p>
             </div>
             <div
-              class="flex flex-wrap gap-2 pt-2 border-t border-slate-800 text-xs font-mono text-sky-400"
+              class="flex flex-wrap gap-2 pt-2 border-t border-neutral-800 text-xs font-mono text-neutral-300"
             >
               <span>JavaScript</span> • <span>OpenAI API</span> •
               <span>ServiceNow API</span> • <span>OAuth</span> •
@@ -348,42 +424,24 @@
             </div>
           </div>
 
+          <!-- Automated Infrastructure Monitor -->
           <div
-            class="p-6 bg-slate-900 border border-slate-800 rounded-xl flex flex-col justify-between"
+            class="p-6 bg-black border border-neutral-800 rounded-xl flex flex-col justify-between hover:border-neutral-700 transition"
           >
             <div>
               <h3 class="text-lg font-bold text-white mb-2">
                 Automated Infrastructure Monitor
               </h3>
-              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              <p class="text-neutral-400 text-sm leading-relaxed mb-4">
                 Built a resilient Windows Service automating server health
                 checks.
               </p>
             </div>
             <div
-              class="flex flex-wrap gap-2 pt-2 border-t border-slate-800 text-xs font-mono text-sky-400"
+              class="flex flex-wrap gap-2 pt-2 border-t border-neutral-800 text-xs font-mono text-neutral-300"
             >
               <span>PowerShell</span> • <span>Windows Services</span> •
               <span>SysAdmin</span>
-            </div>
-          </div>
-
-          <div
-            class="p-6 bg-slate-900 border border-slate-800 rounded-xl flex flex-col justify-between"
-          >
-            <div>
-              <h3 class="text-lg font-bold text-white mb-2">
-                Storage Optimization Engine
-              </h3>
-              <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                Engineered an automated pipeline for threshold-based log purging
-                and disk maintenance.
-              </p>
-            </div>
-            <div
-              class="flex flex-wrap gap-2 pt-2 border-t border-slate-800 text-xs font-mono text-sky-400"
-            >
-              <span>PowerShell</span> • <span>Task Scheduler</span>
             </div>
           </div>
         </div>
@@ -400,20 +458,24 @@
           <h2
             class="text-2xl font-bold text-white mb-6 flex items-center gap-3"
           >
-            <i class="fas fa-graduation-cap text-sky-400"></i> Education
+            <i class="fas fa-graduation-cap text-neutral-400"></i> Education
           </h2>
           <div class="space-y-4">
-            <div class="p-4 bg-slate-800/40 border border-slate-800 rounded-lg">
+            <div
+              class="p-4 bg-neutral-900/40 border border-neutral-800 rounded-lg"
+            >
               <h3 class="font-semibold text-white">M.Sc. in Cloud Computing</h3>
-              <p class="text-sm text-slate-400">
+              <p class="text-sm text-neutral-400">
                 Warsaw School of Computer Science | 2022 – 2024
               </p>
             </div>
-            <div class="p-4 bg-slate-800/40 border border-slate-800 rounded-lg">
+            <div
+              class="p-4 bg-neutral-900/40 border border-neutral-800 rounded-lg"
+            >
               <h3 class="font-semibold text-white">
                 B.Sc. in Electrical & Computer Engineering
               </h3>
-              <p class="text-sm text-slate-400">
+              <p class="text-sm text-neutral-400">
                 Mekelle University | 2015 – 2020 (CGPA: 3.59/4)
               </p>
             </div>
@@ -424,18 +486,22 @@
           <h2
             class="text-2xl font-bold text-white mb-6 flex items-center gap-3"
           >
-            <i class="fas fa-certificate text-sky-400"></i> Certifications
+            <i class="fas fa-certificate text-neutral-400"></i> Certifications
           </h2>
           <div class="space-y-4">
-            <div class="p-4 bg-slate-800/40 border border-slate-800 rounded-lg">
+            <div
+              class="p-4 bg-neutral-900/40 border border-neutral-800 rounded-lg"
+            >
               <h3 class="font-semibold text-white">AWS Academy Graduate</h3>
-              <p class="text-sm text-slate-400">AWS Cloud Architecting</p>
+              <p class="text-sm text-neutral-400">AWS Cloud Architecting</p>
             </div>
-            <div class="p-4 bg-slate-800/40 border border-slate-800 rounded-lg">
+            <div
+              class="p-4 bg-neutral-900/40 border border-neutral-800 rounded-lg"
+            >
               <h3 class="font-semibold text-white">
                 ITIL Foundation Certificate
               </h3>
-              <p class="text-sm text-slate-400">IT Service Management</p>
+              <p class="text-sm text-neutral-400">IT Service Management</p>
             </div>
           </div>
         </div>
@@ -445,7 +511,7 @@
     <!-- Footer -->
     <footer
       id="contact"
-      class="py-8 bg-slate-950 border-t border-slate-800 text-center text-xs text-slate-500"
+      class="py-8 bg-black border-t border-neutral-800 text-center text-xs text-neutral-500"
     >
       <p>&copy; 2026 Dawit Admasu. Built for GitHub Pages deployment.</p>
     </footer>
