@@ -1,271 +1,453 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dawit Admasu - Site Reliability Engineer</title>
-    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#f0f9ff",
+                500: "#0284c7",
+                600: "#0284c7",
+                900: "#0c4a6e",
+              },
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <header>
-      <div class="container">
-        <img
-          src="src/images/profile.jpg"
-          alt="Dawit Admasu"
-          class="profile-photo"
-        />
-        <div class="header-info">
-          <h1>Dawit Admasu</h1>
-          <h2>Site Reliability Engineer (SRE)</h2>
-          <p>Gdańsk, Poland</p>
-          <p>
-            Email: <a href="mailto:dawagech@gmail.com">dawagech@gmail.com</a>
-          </p>
-          <p>
-            LinkedIn:
-            <a
-              href="https://linkedin.com/in/dawit-admasu-265a12229"
-              target="_blank"
-              >linkedin.com/in/dawit-admasu-265a12229</a
+  <body class="bg-slate-900 text-slate-100 font-sans antialiased">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full bg-slate-900/90 backdrop-blur border-b border-slate-800 z-50"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <span class="text-xl font-bold tracking-wider text-sky-400"
+            >DAWIT ADMASU</span
+          >
+          <div
+            class="hidden md:flex space-x-8 text-sm font-medium text-slate-300"
+          >
+            <a href="#about" class="hover:text-sky-400 transition">About</a>
+            <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
+            <a href="#experience" class="hover:text-sky-400 transition"
+              >Experience</a
             >
-          </p>
-          <p>Phone: +48517324538</p>
-        </div>
-      </div>
-    </header>
-
-    <section id="about">
-      <div class="container">
-        <div class="resume-panel">
-          <h2 class="section-title">ABOUT ME</h2>
-          <p>
-            Highly motivated Site Reliability Engineer focused on cloud-native
-            architecture, container orchestration, and automated observability.
-            Proven in improving availability, system performance, and resource
-            efficiency by automating monitoring and securing communication
-            across distributed microservices.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <div class="container">
-        <div class="work-experience-panel">
-          <h2 class="section-title">WORK EXPERIENCE</h2>
-
-          <div class="experience-role">
-            <h3>SITE RELIABILITY ENGINEER (CURRENT)</h3>
-            <p class="experience-company">THOMSON REUTERS, GDANSK</p>
-            <p class="experience-location">POLAND,2024</p>
-            <ul>
-              <li>
-                Triaged production outages within an on-call rotation,
-                streamlining incident tracking and reducing overall MTTR.
-              </li>
-              <li>
-                Developed robust PowerShell automation scripts and managed
-                on-premise and cloud environments.
-              </li>
-              <li>
-                Architected an AI-driven orchestration chain integrating
-                ServiceNow with Large Language Models (LLMs), automating
-                incident triaging and reducing Mean Time to Resolution (MTTR).
-              </li>
-            </ul>
-          </div>
-
-          <div class="experience-role">
-            <h3>CUSTOMER SUPPORT ASSOCIATE</h3>
-            <p class="experience-company">Foundever, Gdańsk</p>
-            <p class="experience-location">POLAND, 2023</p>
-            <ul>
-              <li>
-                Provided on-call support for customers experiencing technical
-                issues while using the product.
-              </li>
-            </ul>
+            <a href="#projects" class="hover:text-sky-400 transition"
+              >Projects</a
+            >
+            <a href="#education" class="hover:text-sky-400 transition"
+              >Education</a
+            >
+            <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
           </div>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <section id="projects">
-      <div class="container">
-        <div class="resume-panel">
-          <h2 class="section-title">TECHNICAL PROJECTS</h2>
-          <div class="project-item" style="margin-bottom: 25px">
-            <h3>Autonomous RAG-Based Repository Analyst Agent</h3>
-            <p style="font-style: italic; color: #555; margin: 4px 0">
-              Python, LangChain/LangGraph, OpenAI/LLMs, Vector Databases
-              (Chroma/FAISS), GitHub API
-            </p>
-            <ul style="margin-top: 5px">
-              <li>
-                Architected an agentic Retrieval-Augmented Generation (RAG)
-                pipeline to autonomously ingest, index, and analyze complex
-                codebases directly from GitHub repositories.
-              </li>
-              <li>
-                Engineered semantic search and vector retrieval mechanisms to
-                provide context-aware, accurate answers to technical queries,
-                significantly reducing manual code review and documentation
-                search time.
-              </li>
-            </ul>
-          </div>
-
-          <div class="project-item" style="margin-bottom: 25px">
-            <h3>Automated Infrastructure Health &amp; Monitoring System</h3>
-            <p style="font-style: italic; color: #555; margin: 4px 0">
-              PowerShell, Windows Services, Windows Administration
-            </p>
-            <ul style="margin-top: 5px">
-              <li>
-                Architected and deployed a resilient Windows Service utilizing
-                custom PowerShell scripting to automate comprehensive daily
-                health checks across mission-critical servers.
-              </li>
-              <li>
-                Eliminated manual inspection workflows by implementing real-time
-                anomaly detection and proactive alerting mechanisms, maximizing
-                server uptime and reliability.
-              </li>
-            </ul>
-          </div>
-
-          <div class="project-item" style="margin-bottom: 25px">
-            <h3>Automated Storage Optimization &amp; Disk Management Engine</h3>
-            <p style="font-style: italic; color: #555; margin: 4px 0">
-              PowerShell, Windows Task Scheduler, Storage Optimization
-            </p>
-            <ul style="margin-top: 5px">
-              <li>
-                Engineered an enterprise-grade automated disk maintenance
-                pipeline to dynamically manage system storage and optimize drive
-                performance.
-              </li>
-              <li>
-                Mitigated critical server downtime risks by automating temporary
-                file lifecycles and threshold-based log purging, improving
-                overall system I/O speed.
-              </li>
-            </ul>
-          </div>
-
-          <div class="project-item">
-            <h3>AI-Powered ServiceNow Incident Assistant Chatbot</h3>
-            <p style="font-style: italic; color: #555; margin: 4px 0">
-              JavaScript, OpenAI API, ServiceNow API, OAuth / Secure Token Auth
-            </p>
-            <ul style="margin-top: 5px">
-              <li>
-                Developed and integrated a secure, context-aware conversational
-                AI chatbot directly within ServiceNow to streamline engineering
-                workflows.
-              </li>
-              <li>
-                Accelerated Mean Time to Resolution (MTTR) by enabling engineers
-                to securely query and diagnose active incident tickets via
-                OAuth-authenticated user tokens.
-              </li>
-            </ul>
-          </div>
+    <!-- Hero Section -->
+    <section
+      id="about"
+      class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto"
+    >
+      <div class="space-y-6">
+        <div
+          class="inline-block px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-full text-sky-400 text-sm font-semibold"
+        >
+          Site Reliability Engineer | Cloud & Platform Operations
         </div>
-      </div>
-    </section>
-
-    <section id="education">
-      <div class="container">
-        <div class="resume-panel">
-          <h2 class="section-title">EDUCATION</h2>
-          <div class="degree">
-            <h3>Master’s degree in Cloud Computing</h3>
-            <p>
-              <strong>Warsaw School of Computer Science</strong> | Feb 2022 -
-              2024
-            </p>
-          </div>
-          <div class="degree">
-            <h3>Bachelor of Science in Electrical and Computer Engineering</h3>
-            <p>
-              <strong>Mekelle University</strong> | Graduated 2020 (CGPA:
-              3.59/4)
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container">
-        <div class="technical-skills-panel">
-          <h2 class="section-title">TECHNICAL SKILLS</h2>
-          <ul>
-            <li>
-              <strong>AI & RAG Architecture:</strong> OpenAI Agent Builder, RAG
-              (Semantic Retrieval, Vector Search Ingestion), Prompt Engineering,
-              Visual Workflow Engineering.
-            </li>
-            <li>
-              <strong>Integration & Tools:</strong> GitHub API, Context
-              Management, Custom Tool/MCP Integration.
-            </li>
-            <li>
-              <strong>Containerization &amp; Orchestration:</strong> Docker,
-              Kubernetes (K8s).
-            </li>
-            <li>
-              <strong>CI/CD &amp; Version Control:</strong> GitHub, Bitbucket.
-            </li>
-            <li>
-              <strong>Monitoring &amp; Observability:</strong> Datadog,
-              Prometheus, Grafana
-            </li>
-            <li>
-              <strong>Messaging &amp; Databases:</strong> SQL (Microsoft SQL
-              Server).
-            </li>
-            <li>
-              <strong>Security &amp; Networking:</strong> JWT (Auth), HTTPS
-            </li>
-            <li>
-              <strong>Scripting &amp; OS:</strong> Bash scripting, PowerShell,
-              Unix, Linux (Admin), Windows (Admin).
-            </li>
-            <li>
-              <strong>IT Service Management:</strong> ServiceNow, ITIL
-              Framework.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="certifications">
-      <div class="container">
-        <div class="resume-panel">
-          <h2 class="section-title">CERTIFICATIONS</h2>
-          <ul class="section-list">
-            <li>AWS Academy Graduate in Cloud Architecting</li>
-            <li>ITIL Foundation Certificate in IT Service Management</li>
-            <li>Youth Entrepreneurship training (March 2020)</li>
-            <li>Employability Skills and Career Development (January 2020)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <p>&copy; 2026 Dawit Admasu</p>
-        <p>
-          Data processing consent clause for recruitment purposes in accordance
-          with European Union regulations.
+        <h1
+          class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight"
+        >
+          Dawit Admasu
+        </h1>
+        <p class="text-slate-400 text-lg max-w-3xl leading-relaxed">
+          Site Reliability Engineer focused on supporting enterprise-scale cloud
+          platforms, production environments, and customer-facing technical
+          operations. Strong focus on high-availability AWS architectures,
+          infrastructure-as-code automation, containerized deployments, and
+          AI-driven orchestration.
         </p>
-      </div>
-    </footer>
 
-    <script src="src/js/main.js"></script>
+        <div class="flex flex-wrap gap-4 pt-4 text-slate-300">
+          <span class="flex items-center gap-2"
+            ><i class="fas fa-location-dot text-sky-400"></i> Gdańsk,
+            Poland</span
+          >
+          <a
+            href="mailto:dawagech@gmail.com"
+            class="flex items-center gap-2 hover:text-sky-400"
+            ><i class="fas fa-envelope text-sky-400"></i> dawagech@gmail.com</a
+          >
+          <span class="flex items-center gap-2"
+            ><i class="fas fa-phone text-sky-400"></i> +48 517 324 538</span
+          >
+        </div>
+
+        <div class="flex gap-4 pt-4">
+          <a
+            href="https://www.linkedin.com/in/dawit-a-265a12229"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-2.5 bg-sky-600 hover:bg-sky-500 text-white font-medium rounded-lg transition flex items-center gap-2"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a
+            href="https://daveonre.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium rounded-lg border border-slate-700 transition flex items-center gap-2"
+          >
+            <i class="fab fa-github"></i> GitHub Portfolio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section
+      id="skills"
+      class="py-16 bg-slate-800/50 border-y border-slate-800"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+          <i class="fas fa-code text-sky-400"></i> Technical Expertise
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+            <h3 class="text-sky-400 font-semibold mb-3">
+              Cloud Infrastructure
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              AWS (EKS, ECS, EC2, S3, VPC, IAM, Route 53, Lambda, CloudWatch),
+              Azure (Virtual Networks, Routing, Azure DevOps), Terraform (IaC).
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+            <h3 class="text-sky-400 font-semibold mb-3">
+              Containers & Orchestration
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Kubernetes (K8s), Docker, Volume & Storage Persistence Management.
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+            <h3 class="text-sky-400 font-semibold mb-3">CI/CD & Automation</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              GitHub Actions, Git, Shell (Bash/PowerShell) & Python automation
+              scripting.
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+            <h3 class="text-sky-400 font-semibold mb-3">
+              Observability & SRE Metrics
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Prometheus, Grafana, Datadog, AWS CloudWatch, SLI/SLO tracking,
+              incident management, LLM/RAG application tracing.
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+            <h3 class="text-sky-400 font-semibold mb-3">Data & Databases</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              PostgreSQL (including pgvector), SQL Server, Vector databases,
+              Immutable configurations.
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl">
+            <h3 class="text-sky-400 font-semibold mb-3">
+              Full-Stack & Systems
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Stack FARM (FastAPI, React, MongoDB), Unix/Linux Administration,
+              Windows Server Administration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section
+      id="experience"
+      class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
+    >
+      <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+        <i class="fas fa-briefcase text-sky-400"></i> Professional Experience
+      </h2>
+
+      <div class="space-y-8">
+        <!-- Thomson Reuters -->
+        <div class="relative pl-6 border-l-2 border-sky-500/30">
+          <div
+            class="absolute -left-[9px] top-0 w-4 h-4 bg-sky-500 rounded-full border-4 border-slate-900"
+          ></div>
+          <div
+            class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2"
+          >
+            <h3 class="text-xl font-semibold text-white">
+              Site Reliability Engineer
+            </h3>
+            <span class="text-sky-400 text-sm"
+              >Thomson Reuters | 2024 – Present</span
+            >
+          </div>
+          <p class="text-slate-400 text-sm mb-4">Gdańsk, Poland</p>
+          <ul
+            class="list-disc list-inside text-slate-300 text-sm space-y-2 leading-relaxed"
+          >
+            <li>
+              Monitor and maintain secure cloud-native infrastructure using AWS
+              (EKS, EC2, S3, VPC, IAM), Azure, Kubernetes, Docker, and
+              Terraform.
+            </li>
+            <li>
+              Lead production incident investigations and troubleshooting
+              efforts for critical business services, partnering with teams to
+              minimize downtime.
+            </li>
+            <li>
+              Design and support AI-driven orchestration solutions integrating
+              enterprise systems with LLMs, optimizing workflow performance and
+              observability using LLM tracing.
+            </li>
+            <li>
+              Develop automation solutions using Python, Bash, and PowerShell to
+              streamline CI/CD pipelines and infrastructure delivery.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Foundever -->
+        <div class="relative pl-6 border-l-2 border-slate-700">
+          <div
+            class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-900"
+          ></div>
+          <div
+            class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2"
+          >
+            <h3 class="text-xl font-semibold text-white">
+              Customer Support Associate
+            </h3>
+            <span class="text-slate-400 text-sm">Foundever | 2022 – 2024</span>
+          </div>
+          <p class="text-slate-400 text-sm mb-4">Gdańsk, Poland</p>
+          <ul
+            class="list-disc list-inside text-slate-300 text-sm space-y-2 leading-relaxed"
+          >
+            <li>
+              Delivered technical customer support and managed escalations
+              involving hardware, software, and service-related issues.
+            </li>
+            <li>
+              Diagnosed and troubleshot technical issues affecting connected
+              devices in coordination with specialized engineering teams.
+            </li>
+          </ul>
+        </div>
+
+        <!-- EBC -->
+        <div class="relative pl-6 border-l-2 border-slate-700">
+          <div
+            class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-700 rounded-full border-4 border-slate-900"
+          ></div>
+          <div
+            class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2"
+          >
+            <h3 class="text-xl font-semibold text-white">
+              Junior Database Administrator
+            </h3>
+            <span class="text-slate-400 text-sm">EBC | 2020 – 2021</span>
+          </div>
+          <p class="text-slate-400 text-sm mb-4">Addis Ababa, Ethiopia</p>
+          <ul
+            class="list-disc list-inside text-slate-300 text-sm space-y-2 leading-relaxed"
+          >
+            <li>
+              Managed daily administration and health checks of Microsoft SQL
+              Server and PostgreSQL databases.
+            </li>
+            <li>
+              Assisted with user access management, auditing database
+              permissions, and security roles in line with company policies.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Projects -->
+    <section
+      id="projects"
+      class="py-16 bg-slate-800/50 border-y border-slate-800"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+          <i class="fas fa-diagram-project text-sky-400"></i> Featured Technical
+          Projects
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="p-6 bg-slate-900 border border-slate-800 rounded-xl flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-bold text-white mb-2">
+                Autonomous RAG Repo Analyst Agent
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Architected an agentic RAG pipeline to ingest, index, and query
+                complex codebases autonomously, deploying backend services to
+                AWS EC2.
+              </p>
+            </div>
+            <div
+              class="flex flex-wrap gap-2 pt-2 border-t border-slate-800 text-xs font-mono text-sky-400"
+            >
+              <span>Python</span> • <span>OpenAI</span> •
+              <span>Vector DBs</span> • <span>GitHub API</span> •
+              <span>AWS S3</span>
+            </div>
+          </div>
+
+          <div
+            class="p-6 bg-slate-900 border border-slate-800 rounded-xl flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-bold text-white mb-2">
+                AI ServiceNow Incident Chatbot
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Integrated a secure, context-aware AI chatbot within ServiceNow
+                to diagnose active tickets and lower MTTR.
+              </p>
+            </div>
+            <div
+              class="flex flex-wrap gap-2 pt-2 border-t border-slate-800 text-xs font-mono text-sky-400"
+            >
+              <span>JavaScript</span> • <span>OpenAI API</span> •
+              <span>ServiceNow API</span> • <span>OAuth</span> •
+              <span>AWS S3</span>
+            </div>
+          </div>
+
+          <div
+            class="p-6 bg-slate-900 border border-slate-800 rounded-xl flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-bold text-white mb-2">
+                Automated Infrastructure Monitor
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Built a resilient Windows Service automating server health
+                checks.
+              </p>
+            </div>
+            <div
+              class="flex flex-wrap gap-2 pt-2 border-t border-slate-800 text-xs font-mono text-sky-400"
+            >
+              <span>PowerShell</span> • <span>Windows Services</span> •
+              <span>SysAdmin</span>
+            </div>
+          </div>
+
+          <div
+            class="p-6 bg-slate-900 border border-slate-800 rounded-xl flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-lg font-bold text-white mb-2">
+                Storage Optimization Engine
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Engineered an automated pipeline for threshold-based log purging
+                and disk maintenance.
+              </p>
+            </div>
+            <div
+              class="flex flex-wrap gap-2 pt-2 border-t border-slate-800 text-xs font-mono text-sky-400"
+            >
+              <span>PowerShell</span> • <span>Task Scheduler</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section
+      id="education"
+      class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h2
+            class="text-2xl font-bold text-white mb-6 flex items-center gap-3"
+          >
+            <i class="fas fa-graduation-cap text-sky-400"></i> Education
+          </h2>
+          <div class="space-y-4">
+            <div class="p-4 bg-slate-800/40 border border-slate-800 rounded-lg">
+              <h3 class="font-semibold text-white">M.Sc. in Cloud Computing</h3>
+              <p class="text-sm text-slate-400">
+                Warsaw School of Computer Science | 2022 – 2024
+              </p>
+            </div>
+            <div class="p-4 bg-slate-800/40 border border-slate-800 rounded-lg">
+              <h3 class="font-semibold text-white">
+                B.Sc. in Electrical & Computer Engineering
+              </h3>
+              <p class="text-sm text-slate-400">
+                Mekelle University | 2015 – 2020 (CGPA: 3.59/4)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2
+            class="text-2xl font-bold text-white mb-6 flex items-center gap-3"
+          >
+            <i class="fas fa-certificate text-sky-400"></i> Certifications
+          </h2>
+          <div class="space-y-4">
+            <div class="p-4 bg-slate-800/40 border border-slate-800 rounded-lg">
+              <h3 class="font-semibold text-white">AWS Academy Graduate</h3>
+              <p class="text-sm text-slate-400">AWS Cloud Architecting</p>
+            </div>
+            <div class="p-4 bg-slate-800/40 border border-slate-800 rounded-lg">
+              <h3 class="font-semibold text-white">
+                ITIL Foundation Certificate
+              </h3>
+              <p class="text-sm text-slate-400">IT Service Management</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      id="contact"
+      class="py-8 bg-slate-950 border-t border-slate-800 text-center text-xs text-slate-500"
+    >
+      <p>&copy; 2026 Dawit Admasu. Built for GitHub Pages deployment.</p>
+    </footer>
   </body>
 </html>
